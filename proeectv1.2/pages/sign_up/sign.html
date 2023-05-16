@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <div class="main">
+        <Video autoplay muted loop plays-inline class="back_video_main"> <source src="../../resources/video/sign.mp4" type="video/mp4"></Video>
+        <div class="content" id="hi">
+            <h1 class="title">SignUp</h1>
+            <form action="../sign_up_2/sign2.html" >
+                <div class="c1">
+                    <label for="username"><img src="../../resources/pictures/user.png" alt="#" class="user"></label>
+                    <input type="text" maxlength="10" placeholder="Ecrire Ton Nom" id="username" onchange="saveUser()"  class="user_input" autocomplete="off" required">
+                    <img src="../../resources/pictures/unchecked.png" alt="#" id="FT" >
+                </div>
+                <center><h4 class="eror" ></h4></center>
+                <div class="c1">
+                    <label for="mail"><img src="../../resources/pictures/email.png" alt="#" class="user"></label>
+                    <input type="email"  placeholder="Exemple@exemple.com" id="mail"  class="mail_input" autocomplete="off" required  onchange="saveMail()" >
+                    <img src="../../resources/pictures/unchecked.png" alt="#" id="MT">
+                </div>
+                <center><h4 class="eror"></h4></center>
+                <div class="c1">
+                    <label for="pass"><img src="../../resources/pictures/pass.png" alt="#" class="password"></label>
+                    <input type="password"  placeholder="ecrire ton mot de passe ici" id="pass"  class="pass_input" autocomplete="off" required >
+                    <img src="../../resources/pictures/unchecked.png" alt="#" id="PT">
+                </div>
+                <center><h4 class="eror"></h4></center>
+                <div class="c1" id="g">
+                    <img src="../../resources/pictures/man.png" alt="#" class="shosen" id="man" ">
+                    <h4 class="ltrs"></h4>
+                    <img src="../../resources/pictures/women.png" alt="#" class="" id="women"" >
+                </div>
+                <h4 class="eror"></h4>
+                <div class="c1">
+                    <input type="date" class="nai" required id="naiss" onchange="saveDate()">
+                </div>
+                <div id="g1" class="c1">
+                <input type="submit" value="SignUp" class="button1" id="button" >
+                </div>
+            </form>
+        </div>
+        <img src="../../resources/pictures/god.jpg" alt="#" class="god1" id="b">
+    </div>
+    <script src="sign.js"></script>
+    
+</body>
+</html>

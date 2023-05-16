@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sign3.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="main">
+        <Video autoplay muted loop plays-inline class="back_video_main"> <source src="../../resources/video/sign.mp4" type="video/mp4"></Video>
+        <div class="content" id="hi">
+            <div class="title_cont">
+                <h1 class="title">Inscription</h1>
+                <h3 class="min_title">Choisissez Vos Passe-Temps</h3>
+            </div>
+            <div class="cont2">
+                <div class="d1">
+                    <div class="indiv" id="Games>" >
+                        <img src="../../resources/pictures/game.png" alt="#" height="25px" width="25px">
+                        <h1> Games</h1>
+                    </div>
+                    <div class="indiv" id="Read" >
+                        <img src="../../resources/pictures/book.png" alt="#" height="25px" width="25px">
+                        <h1>Lirer</h1>
+                    </div>
+                    <div class="indiv" id="Listen" >
+                        <img src="../../resources/pictures/music.png" alt="#" height="25px" width="25px">
+                        <h1>Music</h1>
+                    </div>
+                </div>
+                <div class="d2">
+                    <div class="indiv" id="Work" >
+                        <img src="../../resources/pictures/work.png" alt="#" height="25px" width="25px">
+                        <h1>Travail</h1>
+                    </div>
+                    <div class="indiv" id="Draw" >
+                        <img src="../../resources/pictures/draw.png" alt="#" height="25px" width="25px">
+                        <h1>Dessin</h1>
+                    </div>
+                    <div class="indiv" id="sport" >
+                        <img src="../../resources/pictures/sport.png" alt="#" height="25px" width="25px">
+                        <h1>Sport</h1>
+                    </div>
+                </div>
+                <div class="d3">
+                    <div class="indiv" id="travel"  >
+                        <img src="../../resources/pictures/travel.png" alt="#" height="25px" width="25px">
+                        <h1>Voyage</h1>
+                    </div>
+                    <div class="indiv" id="dance"  >
+                        <img src="../../resources/pictures/dance.png" alt="#" height="25px" width="25px">
+                        <h1>Danse</h1>
+                    </div>
+                    <div class="indiv" id="shopping"  >
+                        <img src="../../resources/pictures/shopping.png" alt="#" height="25px" width="25px">
+                        <h1>Achat</h1>
+                    </div>
+                </div>
+                <div class="d4">
+                    <div class="indiv" id="eat"  >
+                        <img src="../../resources/pictures/eating.png" alt="#" height="25px" width="25px">
+                        <h1>Mange</h1>
+                    </div>
+                    <div class="indiv" id="write"  >
+                        <img src="../../resources/pictures/write.png" alt="#" height="25px" width="25px">
+                        <h1>Ecrire</h1>
+                    </div>
+                    <div class="indiv" id="cook"  >
+                        <img src="../../resources/pictures/cooking.png" alt="#" height="25px" width="25px">
+                        <h1>cuisine</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="../storys/story.html">Finir</a>
+        </div>
+    </div>
+    <script>
+        const divs = document.getElementsByClassName("indiv");
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].addEventListener("click", function() {
+                this.classList.toggle("clicked");
+            });
+        }
+    </script>
+
+        
+</body>
+</html>

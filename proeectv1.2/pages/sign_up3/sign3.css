@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+@font-face {
+    font-family: titles;
+    src: url("../../resources/fonts/BrunoAce-Regular.ttf");
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: 100%;
+        height: auto;
+    }
+    }
+@media (max-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: auto;
+        height: 100%;
+    }
+}
+.content{
+    width: 450px;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffff;
+    transition: box-shadow 1s;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cont2{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.title , .min_title{
+    top: 0;
+    margin-top: 19px;
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 40px;
+    font-family: titles;
+    font-weight: 1500;
+    position: absolute;
+
+}
+.title_cont{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.back_video_main{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.min_title{
+    font-size: 20px;
+    margin: 75px 0px 15px 0px;
+    letter-spacing: 2px;
+}
+.d1 , .d2 , .d3 , .d4{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden ;
+}
+.indiv{
+    padding: 2px;
+    border: rgba(0, 0, 0, 0.61) 1px solid;
+    height: 50%;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 27px;
+    font-family:monospace;
+    font-weight: bolder;  
+    margin: 3px 0px 0px 3px;
+}
+h1,.indiv:hover{
+    cursor: pointer;
+}
+a{
+    font-size: 18px;
+    padding: 10px 15%;
+    color: rgba(0, 0, 0, 0.61);
+    font-family:monospace;
+    background-color: transparent;
+    border:  1px solid rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.clicked{
+    border: 2px solid rgba(0, 0, 0, 0.61) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sign2.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="main">
+        <Video autoplay muted loop plays-inline class="back_video_main"> <source src="../../resources/video/sign.mp4" type="video/mp4"></Video>
+        <div class="content" id="hi">
+            <h1 class="title">SignUp</h1>
+            <form action="../sign_up3/sign3.html">
+                <div id="Profile_pic" >
+                <input type="file" name="file" id="Profile_picture" required  onchange="show(event)" accept="image/*" >
+                </div>
+                <input type="text" name="text" id="t" required placeholder="Ecrire Ton Nom" onchange="SaveName()" >
+                <input type="submit" class="but">
+            </form>
+    </div>
+    </div>
+    <script>
+        function show (event){
+            let files = event.target.files;
+            let src = URL.createObjectURL(files[0]);
+            let back = document.getElementById("Profile_picture"); 
+            back.style.backgroundImage = `url(${src})`;
+            localStorage.setItem("picture",src);
+        
+                
+        }
+        function SaveName (){
+            let name = document.getElementById("t")
+            localStorage.setItem("Name",name.value)
+        }
+    </script>
+</body>
+</html>

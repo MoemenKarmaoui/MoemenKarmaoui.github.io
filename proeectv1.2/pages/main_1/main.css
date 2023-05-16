@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+@font-face {
+    font-family: rules_text;
+    src: url("../../resources/fonts/Sigmar-Regular.ttf");
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: space-around;
+    padding: 20px 8%;
+    width: 100%;
+    align-items: center;
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 45px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffff;
+    font-weight: 600;
+    transition: border 0.4s;
+    transform-origin: left ;
+}
+nav ul li a:hover{
+    border-bottom: 1px #ffff solid;
+}
+
+.container h1{
+    font-size: 5.2rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffff;
+    transition: color 0.8s;
+    font-weight:600;
+    transition-property: inherit;
+    transform-origin: bottom;
+}
+.container{
+    text-align: center;
+}
+.container h1 , .container h4:hover {
+    cursor:default;
+}
+@keyframes button {
+    0%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+
+    }
+.hh3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: button 2s infinite;
+    font-size: 29px;
+    display: inline-block;
+    font-weight: 750;
+    margin-top: 40px;
+    border: solid 1px #ffff;
+    border-radius: 50px;
+    padding: 14px  50px ;
+    color: #ffff;
+    text-decoration: none;
+}
+.back_video_main{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: 100%;
+        height: auto;
+    }
+    .back_video_main1{
+        width: 100%;
+        height: auto;
+    }
+    }
+@media (max-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: auto;
+        height: 100%;
+    }
+    .back_video_main1{
+        width: auto;
+        height: 100%;
+    }
+}
+.container h1:hover{
+    color: #ffff;
+}
+.container h4{
+    font-size: 5.2rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffff;
+    transition: color 0.8s;
+    font-weight:600;
+    transition-property: inherit;
+    transform-origin: bottom;
+}
+.container h4:hover{
+    color: #ffff;
+
+}
+.main2{
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    margin: 0 50px 20px 0;
+    background-image: url("../../resources/pictures/up-arrow.png");
+    background-size: cover;
+}
+.top2{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    margin: 0 50px 20px 0;
+    background-image: url("../../resources/pictures/up-arrow.png");
+    background-size: cover;
+}
+.back_video_main1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -3;
+}
+
+.rules{
+    width: 90%;
+    height: 75vh;
+    border: solid #ffff 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    animation: border_shadow 6s infinite ;
+}
+
+.rules p {
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+    font-family: rules_text;
+    font-size: 2.1rem;
+    left: 0;
+    position: absolute;
+    margin: 0px 20px 0px 20px;
+    transition: color 3s;
+    transform-origin: bottom;
+}
+.check_gf{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    margin-right: 5px;
+    height: 260px;
+    width: 240px;
+    margin-right: 160px;
+    margin-top: 20px;
+    transform: rotate(-14deg);
+}
+
+.rules:hover .rt1{
+    color: white;
+    -webkit-text-stroke-width: 0px;
+}
+#mt1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 20px 20px 0;
+    font-size: 24px;
+}
+.main3{
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes tshadow {
+    0%{
+        text-shadow: white 0px 0px 0px;
+    }
+    50%{
+        text-shadow: white 0px 0px 20px;
+    }
+}
+.title_rules{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 35px 0px 0px 25px;
+    animation: tshadow 5s infinite;
+    font-weight: 1000;
+
+}
+.plist{
+    color: #ffff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    list-style-type: none;
+    margin-left: 20px;
+}
+.title_rules1{
+    animation: tshadow 5s infinite;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}   
+#l2,#l3,#l4{
+    margin-top: 45px;
+}
+#l1:hover{
+    text-decoration: underline;
+}
+#l2:hover{
+    text-decoration: underline;
+}
+#l3:hover{
+    text-decoration: underline;
+}
+#l4:hover{
+    text-decoration: underline;
+}
+.in{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border: solid #ffff 1px;
+    padding: 6px;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 50px 20px;
+}
+.in label{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin: 0 5px 0 10px;
+}
+.ch1{
+    background-color: red;
+}
+.hh4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 500px 37px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: button 2s infinite;
+    font-size: 29px;
+    font-weight: 750;
+    border: solid 1px #ffff;
+    border-radius: 50px;
+    padding: 14px  50px ;
+    color: #ffff;
+    text-decoration: none;
+
+}
+.hh4vis{
+    visibility: hidden;
+}
+@keyframes border_shadow {
+    0%{box-shadow: #ffff 0 0 19px;}
+    100%{box-shadow: #ffff 0 0 25px;}
+}
