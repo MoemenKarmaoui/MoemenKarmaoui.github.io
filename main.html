@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/main_1/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main" id="p1">
+        <a href="#p1" class="top"></a>
+        <Video autoplay muted loop plays-inline class="back_video_main"> <source src="resources/video/main1.mp4" type="video/mp4"></Video>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="pages/sign_up/sign.html">Login</a></li>
+                <li><a href="pages/storys/story.html">Storys</a></li>
+                <li><a href="pages/qeution/q.html">Questions</a></li>
+                <li><a href="pages/fin/f.css">OAbout</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h4>bienvenu a le</h4>
+            <h1>CONCOURS DE LECTURE</h1>
+            <a id="mt" class="hh3" href="#p2" >NEXT</a>
+        </div>
+    </div>
+    <div class="main2" id="p2">
+        <a href="#p1" class="top2"></a>
+        <Video autoplay muted loop plays-inline class="back_video_main1"> <source src="resources/video/main2.mp4" type="video/mp4"></Video>
+        <section class="rules">
+            <p class="rt1">Ce concours dépend de votre intelligence, <br><br> de votre vitesse de lecture et prolonge, <br><br> et enfin votre compréhension et la force de votre mémoire . <br><br> Pour participer, veuillez suivre les règles suivantes : </p>
+            <img src="resources/pictures/chech.gif" class="check_gf">
+            <a id="mt1" class="hh3" href="#p3" onclick="auto_type" >NEXT</a>
+        </section>
+    </div>
+    <div class="main2" id="p3">
+        <a href="#p2" class="top2"></a>
+        <Video autoplay muted loop plays-inline class="back_video_main1"> <source src="resources/video/main2.mp4" type="video/mp4"></Video>
+        <section class="rules">
+            <h1 class="title_rules">Les règles : </h1><br><br>
+            <ol type="I"  class="plist">
+                <li id="l1"><span class="title_rules1">1. </span> Vous devez lire les histoires complètes sans dépasser les pages ou même les phrases.</li>
+                <li id="l2"><span class="title_rules1">2. </span>Concentrez-vous pendant la lecture pour répondre aux questions plus tard.</li>
+                <li id="l3"><span class="title_rules1">3. </span>Comptez sur vous-même et n’utilisez pas Internet ou n’obtenez pas d’aide de quelqu’un d’autre.</li>
+                <li id="l4"><span class="title_rules1">4. </span>Respect total des lois passées en remplissant le document suivant avec vos informations personnelles réelles.</li>
+            </ol>
+            <div class="in">
+                <input class="ch1" type="checkbox" name="check" id="check" onchange="changeY(this)">
+                <label for="check" >J’accepte toutes les règles et je vais me préparer à commencer.</label>
+            </div>
+            <a id="mt2" class="hh4vis" href="pages/sign_up/sign.html" >SignUp</a>
+            <img src="resources/pictures/rules.gif" class="rule_gf">
+
+        </section>
+    </div>
+    <script src="pages/main_1/main.js"></script>
+</body>
+</html>

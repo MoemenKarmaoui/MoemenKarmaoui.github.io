@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.main , .main2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main{
+    z-index: 2;
+}
+.back_video_main{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: 100%;
+        height: auto;
+    }
+    .back_video_main1{
+        width: 100%;
+        height: auto;
+    }
+    }
+@media (max-aspect-ratio: 16/9) {
+    .back_video_main{
+        width: auto;
+        height: 100%;
+    }
+    .back_video_main1{
+        width: auto;
+        height: 100%;
+    }
+}
+.al{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80%;
+    width: 40%;
+    background-color: rgba(30, 30, 30, 0.716);
+    box-shadow: 0 0 35px rgba(30, 30, 30, 0.716);
+    border-radius: 10px;
+
+}
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    color: #ccc;
+    font-size: 20px;
+    margin-bottom: 8px ;
+}
+input{
+    background-color: transparent;
+    width: 60%;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid rgba(30, 30, 30, 0.716);
+    box-shadow: 0 0 20px #000;
+    color: #ccc;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+    background-color: transparent;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ccc;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+a{
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.main2 .cont{
+    height: 50%;
+}
+textarea{
+    background-color: transparent;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #000;
+    border: 1px #000 solid;
+    height: 550px ;
+    width: 400px;
+    padding: 10px;
+    resize: none;
+}
+textarea:focus{
+    background-color: transparent;
+    outline: none;
+
+}

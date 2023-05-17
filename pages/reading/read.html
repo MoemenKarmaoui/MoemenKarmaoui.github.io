@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="read.css">
+    <title>Read</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <a href="../qeution/q.html" class="skip">Skip</a>
+            <div>
+                <h2>Vous serez directement redirigé vers la section des questions pendant : <span class="timer">00:10:00</span></h2>
+            </div>
+        </div>
+        <div class="elements_container">
+            <div class="story_main">
+                <img src="" alt="" id="ProfilePic" >
+                <div class="instory">
+                    <h1 id="title">bouzaien</h1>
+                    <p class="res"></p>
+                </div>
+            </div>
+            <div class="text-content">
+                <p class="TheNovel"></p>
+            </div>
+        </div>
+    </div>
+    <script >
+        document.querySelector(".res").textContent = localStorage.getItem("resumeValue");
+        document.querySelector("#title").textContent = localStorage.getItem("titleValue");
+        document.querySelector(".TheNovel").textContent = localStorage.getItem("NovelValue");
+        document.querySelector("#ProfilePic").src = localStorage.getItem("PictureValue");
+        setTimeout(function() {
+            window.location.href = "../qeution/q.html"
+        },600000);
+    </script>
+</body>
+</html>
