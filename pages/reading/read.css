@@ -70,8 +70,6 @@ body{
     display: flex;
     justify-content:left;
     align-items: center;
-    overflow-x: hidden;
-
 }
 img{
     height: 95%;
@@ -83,6 +81,7 @@ img{
     height: 100%;
     width: 75%;
     overflow: hidden;
+
 }
 .instory h1{
     font-size: 28px;
