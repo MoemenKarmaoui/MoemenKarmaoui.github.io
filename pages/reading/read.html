@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="read.css">
+    <link rel="icon" href="../../resources/pictures/icons/read.png">
     <title>Read</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
             <a href="../qeution/q.html" class="skip">Skip</a>
             <div>
                 <h2>Vous serez directement redirigé vers la section des questions pendant : </h2>
-                <span class="timer"><h2 class="min"></h2><h2 class="sec"></h2><h2 class="ms"></h2></span>
+                <span class="timer"><h2 class="min"> </h2><h2 class="sec"> </h2><h2 class="ms"> </h2></span>
 
             </div>
         </div>
@@ -42,8 +43,8 @@
             let min = Math.floor(current / ( 1000 * 60));
             let sec =  Math.floor(current % (1000*60) / 1000 );
             let ms = Math.floor(current % (1000*60) % 1000 );
-            document.querySelector(".min").textContent = min + " : ";
-            document.querySelector(".sec").textContent = sec + " : ";
+            document.querySelector(".min").textContent = min + " : \u00A0" ;
+            document.querySelector(".sec").textContent = sec  + " : \u00A0" ;
             document.querySelector(".ms").textContent = ms;
             if ( current < 0){
                 clearInterval(count);

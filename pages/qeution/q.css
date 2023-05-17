@@ -52,10 +52,11 @@ body{
     flex-direction: column;
     overflow: hidden;
     height: 80%;
-    width: 40%;
+    width: 35%;
     background-color: rgba(30, 30, 30, 0.716);
     box-shadow: 0 0 35px rgba(30, 30, 30, 0.716);
     border-radius: 10px;
+    padding: 10px;
 
 }
 .cont{

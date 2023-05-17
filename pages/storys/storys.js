@@ -1749,9 +1749,7 @@ let resume = {
         Now thoroughly shocked, he quickly ran to the window and took a look outside . That was when a truly unbelievable spectacle manifested itself before his eyes .
         
         Every single student leaving through the school gates; students exercising on the field, cars passing on the road, pedestrians walking on the pavement, and even the kicked ball flying in the air… . .
-        
-        … . Everything had come to a dead stop .
-        
+                
         ‘But, how can something like this be… . ?!’
         
         Soo-Hoh clenched both of his fists real tight and slammed at the window with all of his might .
@@ -2121,8 +2119,6 @@ let resume = {
         Now thoroughly shocked, he quickly ran to the window and took a look outside . That was when a truly unbelievable spectacle manifested itself before his eyes
         
         Every single student leaving through the school gates; students exercising on the field, cars passing on the road, pedestrians walking on the pavement, and even the kicked ball flying in the air… .
-        
-        … . Everything had come to a dead stop
         
         ‘But, how can something like this be… . ?!’.
         
