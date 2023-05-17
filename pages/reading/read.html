@@ -10,7 +10,9 @@
         <div class="toolbar">
             <a href="../qeution/q.html" class="skip">Skip</a>
             <div>
-                <h2>Vous serez directement redirigé vers la section des questions pendant : <span class="timer">00:10:00</span></h2>
+                <h2>Vous serez directement redirigé vers la section des questions pendant : </h2>
+                <span class="timer"><h2 class="min"></h2><h2 class="sec"></h2><h2 class="ms"></h2></span>
+
             </div>
         </div>
         <div class="elements_container">
@@ -31,9 +33,23 @@
         document.querySelector("#title").textContent = localStorage.getItem("titleValue");
         document.querySelector(".TheNovel").textContent = localStorage.getItem("NovelValue");
         document.querySelector("#ProfilePic").src = localStorage.getItem("PictureValue");
-        setTimeout(function() {
-            window.location.href = "../qeution/q.html"
-        },600000);
+        let countdawn = 900000;
+        let startTime = Date.now(); 
+        let count  = setInterval(() => {
+            let currentTime = Date.now();
+            let time= currentTime - startTime;
+            let current = countdawn - time;
+            let min = Math.floor(current / ( 1000 * 60));
+            let sec =  Math.floor(current % (1000*60) / 1000 );
+            let ms = Math.floor(current % (1000*60) % 1000 );
+            document.querySelector(".min").textContent = min + " : ";
+            document.querySelector(".sec").textContent = sec + " : ";
+            document.querySelector(".ms").textContent = ms;
+            if ( current < 0){
+                clearInterval(count);
+                window.location.href = "../qeution/q.html"
+            }
+        },1);
     </script>
 </body>
 </html>
